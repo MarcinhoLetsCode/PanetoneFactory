@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,7 +39,7 @@ public class coffe_fragment extends Fragment {
         return view;
     }
 
-    private class CoffeAdapter extends RecyclerView.Adapter<CoffeAdapter.ViewHolder> {
+    public class CoffeAdapter extends RecyclerView.Adapter<CoffeAdapter.ViewHolder> {
         List<Coffe> cafeLista;
         Context context;
 
@@ -47,18 +48,20 @@ public class coffe_fragment extends Fragment {
             this.cafeLista = cafeLista;
         }
 
+        public CoffeAdapter() {}
+
         @NonNull
         @Override
         public CoffeAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view;
-            LayoutInflater inflater = LayoutInflater.from(context);
-            view = inflater.inflate(R.layout.fragment_coffe_bottom, parent, false);
+            LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+            view = inflater.inflate(R.layout.modelo_teste, parent, false);
             return new ViewHolder(view);
         }
 
         @Override
         public void onBindViewHolder(@NonNull CoffeAdapter.ViewHolder holder, int position) {
-            holder.textView.setText(cafeLista.get(holder.getAdapterPosition()).getCafe());
+            holder.textView.setText(cafeLista.get(position).getCafe());
         }
 
         @Override
