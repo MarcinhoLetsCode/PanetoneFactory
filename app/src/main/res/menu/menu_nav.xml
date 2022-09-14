@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item android:title="Coffe"
+            android:id="@+id/mnCoffe"
+            app:showAsAction="always"
+            android:enabled="true"/>
+        <item android:title="Muffin"
+            android:id="@+id/mnMuffin"
+            app:showAsAction="always"
+            android:enabled="true"/>
+        <item android:title="Tea"
+            android:id="@+id/mnTea"
+            app:showAsAction="always"
+            android:enabled="true"/>
+        <item android:title="Donuts"
+            android:id="@+id/mnDOnuts"
+            app:showAsAction="always"
+            android:enabled="true"/>
+    </group>
+
+</menu>
