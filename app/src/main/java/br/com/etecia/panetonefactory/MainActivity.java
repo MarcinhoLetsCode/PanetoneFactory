@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                                 replace(R.id.container, new tea_fragment()).
                                 commit();
                         return true;
-                    case R.id.mnDOnuts:
+                    case R.id.mnDonuts:
                         getSupportFragmentManager().
                                 beginTransaction().
                                 replace(R.id.container, new donuts_fragment()).

@@ -15,7 +15,7 @@
             app:showAsAction="always"
             android:enabled="true"/>
         <item android:title="Donuts"
-            android:id="@+id/mnDOnuts"
+            android:id="@+id/mnDonuts"
             app:showAsAction="always"
             android:enabled="true"/>
     </group>

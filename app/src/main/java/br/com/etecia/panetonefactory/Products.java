@@ -1,11 +1,11 @@
 package br.com.etecia.panetonefactory;
 
-public class Coffe {
+public class Products {
     String cafe;
 
-    public Coffe(){}
+    public Products(){}
 
-    public Coffe(String cafe) {
+    public Products(String cafe) {
         this.cafe = cafe;
     }
 
